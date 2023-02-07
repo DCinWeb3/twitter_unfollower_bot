@@ -5,11 +5,4 @@ Enter in your specific consumer and access tokens in the lines for the twitter a
 auth = tweepy.OAuthHandler('consumer_token', 'consumer_secret')
 auth.set_access_token('access_token','access_token_secret')
 
-and uncomment one of these methods under if __name__ == "__main__":
-# unfollow anyone that hasn't tweeted in 60 days even if they follow me back
-# unfollow_inactive_twitter_user(60, False)
-
-# unfollow anyone that doesn't follow me back and has less than 1000 followers
-# unfollow_twitter_user(1000)
-
-And it should be good to run
+and uncomment one of the methods under if __name__ == "__main__": and it should be good to run
